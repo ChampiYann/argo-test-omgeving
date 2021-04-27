@@ -6,8 +6,9 @@ metadata:
 spec:
     project: default
     source:
-        chart: helloworld:1.0.0
+        chart: helloworld
         repoURL: http://172.17.0.2:8080
+        targetRevision: 1.0.0
     destination:
         namespace: test
         server: https://kubernetes.default.svc
