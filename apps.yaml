@@ -7,7 +7,7 @@ spec:
     project: default
     source:
         path: helm
-        repoURL: https://github.com/rosemay/argo-test-omgeving
+        repoURL: https://github.com/ChampiYann/argo-test-omgeving
         targetRevision: HEAD
     destination:
         namespace: test
