@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: mule-hello-world
+    namespace: test
+spec:
+    project: default
+    source:
+        chart: helloworld:1.0.0
+        repoURL: http://172.17.0.2:8080
+    destination:
+        namespace: test
+        server: https://kubernetes.default.svc
