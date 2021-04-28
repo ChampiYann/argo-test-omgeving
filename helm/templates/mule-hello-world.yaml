@@ -9,6 +9,9 @@ spec:
         repoURL: 'http://172.17.0.2:8080'
         targetRevision: 1.0.0
         chart: helloworld
+        helm:
+            values: |
+                replicaCount: 2
     destination:
         server: 'https://kubernetes.default.svc'
         namespace: test
