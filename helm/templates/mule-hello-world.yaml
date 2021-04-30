@@ -13,7 +13,7 @@ spec:
         chart: helloworld
         helm:
             values: |
-                replicaCount: 2
+                replicaCount: {{ .Values.replicaCount }}
     destination:
         server: 'https://kubernetes.default.svc'
         namespace: test
