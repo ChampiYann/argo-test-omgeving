@@ -9,7 +9,7 @@ spec:
     project: default
     source:
         repoURL: 'http://172.17.0.2:8080'
-        targetRevision: 1.0.9
+        targetRevision: 1.0.10
         chart: helloworld
         helm:
             values: |
